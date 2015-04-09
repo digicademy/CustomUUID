@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The plugin.dtd file is located in the OXYGEN_INSATALL_DIR/plugins directory -->
+<!DOCTYPE plugin SYSTEM "../plugin.dtd">
+
+<plugin
+ id="net.namenforschung.customUUID"
+ name="CustomUUID"
+ description="Resolve Custom Editor Variable with UUID"
+ version="1.0"
+ vendor="Namenforschung.net"
+ class="net.namenforschung.customUUID.workspace.WorkspaceAccessPlugin"
+ classLoaderType="preferReferencedResources">
+ <runtime>
+        <library name="lib/oxygen-plugin-customUUID-1.0.jar"/>
+ </runtime>
+ 
+ <extension type="WorkspaceAccess" 
+  class="net.namenforschung.customUUID.workspace.CustomWorkspaceAccessPluginExtension"/>
+</plugin>
